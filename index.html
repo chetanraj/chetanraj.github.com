@@ -3,14 +3,21 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>CHETAN RAJ</title>
+        <title>i am @Chetan_raJ</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
-        <meta name="author" content="">
+        <meta name="author" content="chetan, chetan raj, @chetan_raj">
+        
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <link rel="shortcut icon" href="images/favicon.ico" />
         
         <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
         <link href="css/styles.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500' rel='stylesheet' type='text/css'>
+        
+        <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
+        <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
+        
         <script type="text/javascript">
             less = {
                 env: "development", // or "production"
@@ -28,21 +35,30 @@
             };
         </script>
         <script src="js/less.js" type="text/javascript"></script>
+        
+        <script>
+            $(document).ready(function() {
+                $('.me').draggable().click(function(){
+                    window.open('http://about.me/chetan_raj');
+                });
+            });
+        </script>
     </head>
-    <body>
-        <div class="container">
+    <body class="bg-image">
+        <div class="me"></div>
+        <div class="container font-color-white text-align-center">
             <h1>CHETAN RAJ</h1>
-            <h4>Web Developer</h4>
+            <h4>I design and build web products </h4>
         </div>
-        <footer class="footer">
+        <footer>
             <nav class="social"> 
                 <ul class="social-profiles">																									
                     <li><a class="social-twitter" href="http://twitter.com/chetan_raj">TWITTER</a></li>
                     <li><a class="social-github" href="https://github.com/chetanraj">GITHUB</a></li>
                     <li><a class="social-dribbble" href="http://dribbble.com/Chetan_raJ">DRIBBBLE</a></li>
                     <li><a class="social-instagram" href="http://instagram.com/thecjstream">INSTAGRAM</a></li>
-                    <!--<li><a class="social-forrst" href="https://forrst.com/people/chetanraj">FORRST</a></li>-->
                     <li><a class="social-blog" href="http://devessentials.wordpress.com">BLOG</a></li>
+                    <li><a class="social-reasons" href="http://reasonswelivewith.in">REASONS</a></li>
                 </ul>
             </nav>
         </footer>
