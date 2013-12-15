@@ -44,6 +44,8 @@ footer {
 
 .social .social-profiles {
 	list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .social .social-profiles li {
@@ -117,6 +119,16 @@ canvas {
 }
 
 @media only screen and (max-width: 767px) {
+    canvas {
+        display:none;
+        width:0;
+        height:0;
+    }
+    
+    .container-snow { 
+        width:auto;
+    }
+    
 	footer {
 		height: auto;
 	}
