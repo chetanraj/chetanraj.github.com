@@ -22,6 +22,13 @@ body {
 	margin-left: -100px;
 }
 
+.container-snow {
+    position: fixed;
+	top: 50%;
+    margin-top: -100px;
+    width:100%;
+}
+
 h4 {
 	text-align: center;
 }
@@ -94,6 +101,16 @@ footer {
     background-size: 100%;
     cursor:pointer;
     z-index:100;
+}
+
+canvas {
+	display: block;
+    width:100%;
+    height:100%;
+}
+
+.bg-green {
+    background:#27ae60;
 }
 
 @media only screen and (max-width: 767px) {
