@@ -139,4 +139,8 @@ canvas {
     .social ul.social-profiles li .social-github{
         display:block;
     }
+    
+    .bg-image {
+        background: #2ecc71;
+    }
 }
