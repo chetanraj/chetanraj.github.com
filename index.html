@@ -11,13 +11,14 @@
         <link rel="shortcut icon" href="images/favicon.ico">
         <link rel="shortcut icon" href="images/favicon.ico" />
         
-        <link rel="stylesheet/less" type="text/css" href="css/styles.less" />
+        <link rel="stylesheet/less" type="text/css" href="css/styles.less">
         <link href="css/styles.min.css" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Maven+Pro:400,500' rel='stylesheet' type='text/css'>
+        <link href="css/jquery.fullPage.css" rel="stylesheet/less" type="text/css">
         
         <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
-        
+        <script src="js/jquery.fullPage.min.js"></script>
         <script type="text/javascript">
             less = {
                 env: "development", // or "production"
@@ -41,28 +42,42 @@
                 $('.me').draggable().click(function(){
                     window.open('http://about.me/chetan_raj');
                 });
+
+                $('#fullpage').fullpage();
+                
+                $('.contact-me').click(function(){
+                    $.fn.fullpage.moveSectionDown();
+                });
+                
             });
         </script>
     </head>
     <body class="bg-image">
-        <div class="me"></div>
-        <div class="container font-color-white text-align-center">
-            <h1>CHETAN RAJ</h1>
-            <h4>I design, build and write about web products and a Javascript Lover &lt;3</h4>
+        <div id="fullpage">
+            <div class="section " id="section0">
+                <div class="me"></div>
+                <div class="container font-color-white text-align-center">
+                    <h1>I'm Chetan</h1>
+                    <h4>I like to design, build and write about web products and a Javascript Lover &lt;3</h4>
+                    <a href="javscript:;" class="contact-me">contact me</a>
+                </div>
+            </div>
+            <div class="section" id="section1">
+                <footer>
+                    <nav class="social"> 
+                        <ul class="social-profiles">
+                            <li><a class="social-about" target="_blank" href="http://www.chetanraj.in">ABOUT</a></li>
+                            <li><a class="social-twitter" href="http://twitter.com/chetan_raj">TWITTER</a></li>
+                            <li><a class="social-github" href="https://github.com/chetanraj">GITHUB</a></li>
+                            <li><a class="social-dribbble" href="http://dribbble.com/Chetan_raJ">DRIBBBLE</a></li>
+                            <li><a class="social-instagram" href="http://instagram.com/thecjstream">INSTAGRAM</a></li>
+                            <li><a class="social-blog" href="http://devessentials.wordpress.com">BLOG</a></li>
+                            <li><a class="social-behance" href="http://be.net/chetanraj">BEHANCE</a></li>
+                            <li><a class="social-viewport" href="/viewPort">VIEWPORT</a></li>
+                        </ul>
+                    </nav>
+                </footer>
+            </div>
         </div>
-        <footer>
-            <nav class="social"> 
-                <ul class="social-profiles">
-                    <li><a class="social-about" target="_blank" href="http://www.chetanraj.in">ABOUT</a></li>
-                    <li><a class="social-twitter" href="http://twitter.com/chetan_raj">TWITTER</a></li>
-                    <li><a class="social-github" href="https://github.com/chetanraj">GITHUB</a></li>
-                    <li><a class="social-dribbble" href="http://dribbble.com/Chetan_raJ">DRIBBBLE</a></li>
-                    <li><a class="social-instagram" href="http://instagram.com/thecjstream">INSTAGRAM</a></li>
-                    <li><a class="social-blog" href="http://devessentials.wordpress.com">BLOG</a></li>
-                    <li><a class="social-behance" href="http://be.net/chetanraj">BEHANCE</a></li>
-                    <li><a class="social-viewport" href="/viewPort">VIEWPORT</a></li>
-                </ul>
-            </nav>
-        </footer>
     </body>
 </html>

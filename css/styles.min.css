@@ -59,14 +59,31 @@ footer {
     width: 100px;
     height: 100px;
     background-size: 100%;
-    cursor:pointer;
-    z-index:100;
+    cursor: pointer;
+    z-index: 100;
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 nav.social {
     background: rgba(255, 255, 255, 0.3);
     height: 40px;
     padding-top: 10px;
+}
+
+.cv {
+    border-top: 3px solid #e67e22;
+    margin: 0 auto;
+}
+
+.content {
+    width: 960px;
+    background-color: #ecf0f1;
+}
+
+.contact-me {
+    font-style: italic;
 }
 
 @media only screen and (min-width: 767px) {
