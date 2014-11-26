@@ -54,18 +54,6 @@ footer {
 	padding: 5px 0;
 }
 
-.me {
-    background: url(../images/me.jpg) no-repeat 0 0;
-    width: 100px;
-    height: 100px;
-    background-size: 100%;
-    cursor: pointer;
-    z-index: 100;
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
 nav.social {
     background: rgba(255, 255, 255, 0.3);
     height: 40px;
