@@ -19,6 +19,8 @@
         <script src="http://code.jquery.com/jquery-1.9.1.js" type="text/javascript"></script>
         <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js" type="text/javascript"></script>
         <script src="js/jquery.fullPage.min.js"></script>
+        <script src="//vjs.zencdn.net/4.3/video.js"></script>
+        <script src="js/bigvideo.js"></script>
         <script type="text/javascript">
             less = {
                 env: "development", // or "production"
@@ -49,10 +51,15 @@
                     $.fn.fullpage.moveSectionDown();
                 });
                 
+                $(function() {
+                    var BV = new $.BigVideo();
+                    BV.init();
+                    BV.show('/videos/Christmas_Tree_1.mov.mp4');
+                });
             });
         </script>
     </head>
-    <body class="bg-image">
+    <body>
         <div id="fullpage">
             <div class="section " id="section0">
                 <div class="container font-color-white text-align-center">
