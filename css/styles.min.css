@@ -76,6 +76,7 @@ nav.social {
 .contact-me {
     font-style: italic;
     text-decoration: none;
+    display: none;
 }
 
 @media only screen and (min-width: 767px) {
