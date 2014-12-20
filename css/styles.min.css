@@ -1,6 +1,8 @@
 body {
 	background: #fefefe;
 	font-family: 'Maven Pro', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .text-align-center { text-align:center; }
