@@ -21,6 +21,8 @@
         <script src="js/jquery.fullPage.min.js"></script>
         <script src="//vjs.zencdn.net/4.3/video.js"></script>
         <script src="js/bigvideo.js"></script>
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        
         <script type="text/javascript">
             less = {
                 env: "development", // or "production"
@@ -51,7 +53,7 @@
                     $.fn.fullpage.moveSectionDown();
                 });
                 
-                $(function() {
+                imagesLoaded( document.querySelector('.container'), function( instance ) {
                     var BV = new $.BigVideo();
                     BV.init();
                     BV.show('/videos/Christmas_Tree_1.mov.mp4');
