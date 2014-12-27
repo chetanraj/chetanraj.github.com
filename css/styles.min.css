@@ -7,13 +7,27 @@ body {
 
 .text-align-center { text-align:center; }
 
-.bg-image {
-  background: url(../images/MAC.jpg) no-repeat center center fixed; 
+#fullpage {
+  background: url(../images/new-york-timeline.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: #444;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+	
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+	
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+
+    
 }
 
 .container {
@@ -51,7 +65,7 @@ footer {
 }
 
 .social .social-profiles li a {
-	color: #000;
+	color: #fff;
 	text-decoration: none;
 	text-shadow: none;
 	font-weight: 700;
@@ -78,6 +92,10 @@ nav.social {
 .contact-me {
     font-style: italic;
     text-decoration: none;
+    display: none;
+}
+
+#big-video-wrap {
     display: none;
 }
 
