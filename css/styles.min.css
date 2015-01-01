@@ -26,8 +26,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-
-    
+  padding: 0;
 }
 
 .container {
@@ -99,41 +98,12 @@ nav.social {
     display: none;
 }
 
-@media only screen and (min-width: 767px) {
-    .social .social-profiles li a::before,.social .social-profiles li a::after {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        height: 3px;
-        background: #FFFFFF;
-        content: '';
-        -webkit-transition: -webkit-transform 0.3s;
-        -moz-transition: -moz-transform 0.3s;
-        transition: transform 0.3s;
-    }
-    
-    .social .social-profiles li a::after {
-        opacity: 0;
-        -webkit-transition: top 0.3s, opacity 0.3s, -webkit-transform 0.3s;
-        -moz-transition: top 0.3s, opacity 0.3s, -moz-transform 0.3s;
-        transition: top 0.3s, opacity 0.3s, transform 0.3s;
-    }
- 
+#trigger-overlay{
+    cursor: pointer;
+    color: #444;
+    text-decoration: none;
 }
 
-@media only screen and (max-width: 767px) {
-   
-    footer {
-		height: auto;
-	}
-    
-    
-	.social {
-		display: none;
-	}
-    
-    .bg-image {
-        background: #3498db;
-    }
+.container h4 {
+    font-style: italic;
 }
