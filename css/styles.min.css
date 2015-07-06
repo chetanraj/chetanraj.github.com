@@ -8,7 +8,7 @@ body {
 .text-align-center { text-align:center; }
 
 #fullpage {
-  background: url(../images/new-york-timeline.jpg) no-repeat center center fixed; 
+  background: url(../images/macbook.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -29,9 +29,13 @@ body {
   padding: 0;
 }
 
+#trigger-overlay {
+  cursor: pointer;
+}
+
 .container {
 	position: fixed;
-    top: 50%;
+    top: 20%;
     margin-top: -100px;
     width: 100%;
     background: #FFFFFF;
@@ -41,67 +45,6 @@ body {
 
 h4 {
 	text-align: center;
-}
-
-footer {
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	height: 60px;
-	width: 100%;
-	text-align: center;
-}
-
-.social .social-profiles {
-	list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.social .social-profiles li {
-	display: inline;
-	padding: 0 10px;
-}
-
-.social .social-profiles li a {
-	color: #fff;
-	text-decoration: none;
-	text-shadow: none;
-	font-weight: 700;
-	position: relative;
-	padding: 5px 0;
-}
-
-nav.social {
-    background: rgba(255, 255, 255, 0.3);
-    height: 40px;
-    padding-top: 10px;
-}
-
-.cv {
-    border-top: 3px solid #e67e22;
-    margin: 0 auto;
-}
-
-.content {
-    width: 960px;
-    background-color: #ecf0f1;
-}
-
-.contact-me {
-    font-style: italic;
-    text-decoration: none;
-    display: none;
-}
-
-#big-video-wrap {
-    display: none;
-}
-
-#trigger-overlay{
-    cursor: pointer;
-    color: #444;
-    text-decoration: none;
 }
 
 .container h4 {
