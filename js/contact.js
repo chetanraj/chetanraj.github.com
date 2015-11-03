@@ -1,7 +1,7 @@
 (function() {
 	var triggerBttn = document.getElementById( 'trigger-overlay' ),
 		overlay = document.querySelector( 'div.overlay' ),
-		closeBttn = overlay.querySelector( 'button.overlay-close' );
+		closeBttn = overlay.querySelector( '.overlay-close' );
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
 			'MozTransition': 'transitionend',
@@ -14,6 +14,7 @@
 
 	function toggleOverlay() {
 		if( classie.has( overlay, 'open' ) ) {
+            $(".menu.hidden").removeClass("hidden");
 			classie.remove( overlay, 'open' );
 			classie.add( overlay, 'close' );
 			var onEndTransitionFn = function( ev ) {

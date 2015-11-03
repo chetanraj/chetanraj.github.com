@@ -10,3 +10,10 @@ define(["jquery", "jquery-ui"], function($, ui ) {
         
     });
 });
+
+var menu = document.querySelector('.menu');
+
+function toggleMenu() {
+  menu.classList.toggle('hidden');
+}
+menu.addEventListener('click', toggleMenu);
