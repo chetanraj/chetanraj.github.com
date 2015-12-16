@@ -8,11 +8,7 @@ body {
 .text-align-center { text-align:center; }
 
 #fullpage {
-  background: url(../images/macbook.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url(../images/christmas.png) no-repeat center center fixed; 
   color: #444;
   /* Set rules to fill background */
   min-height: 100%;
