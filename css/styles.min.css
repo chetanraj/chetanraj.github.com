@@ -194,3 +194,14 @@ footer{
 .hidden {
     display: none !important;
 }
+
+.thumbsup {
+    border:none;
+    overflow:hidden;
+    width:70px;
+    height:35px;
+    position: absolute;
+    bottom: 0em;
+    left: 1em;
+    z-index: 1000;
+}
