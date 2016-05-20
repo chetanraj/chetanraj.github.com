@@ -5,14 +5,14 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-	background: rgba(204, 204, 204, 0.9);
+	background: #F6F6F6;
 }
 
 /* Menu style */
 .overlay nav {
 	text-align: center;
 	position: relative;
-	top: 60%;
+	top: 50%;
 	height: 60%;
 	-webkit-transform: translateY(-50%);
 	transform: translateY(-50%);
@@ -65,7 +65,7 @@
 	visibility: visible;
 	opacity: 1;
 	-webkit-transform: scale(1);
-	transform: scale(1);	
+	transform: scale(1);
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
 	transition: transform 0.4s, opacity 0.4s;
 }
