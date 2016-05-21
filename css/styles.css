@@ -60,6 +60,14 @@ footer{
   color: #fff;
 }
 
+.open .menu .bit-1::before,
+.open .menu .bit-1::after,
+.open .menu .bit-2,
+.open .menu .bit-3::before,
+.open .menu .bit-3::after {
+	background: #444;
+}
+
 .menu {
   width: 3em;
   height: 3em;
