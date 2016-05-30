@@ -216,3 +216,14 @@ footer{
     left: 1em;
     z-index: 1000;
 }
+
+.lovetocode {
+		position: absolute;
+	  bottom: .6em;
+	  left: 5em;
+	  z-index: 1000;
+	  height: 18px;
+	  width: 30px;
+	  background: #FFF;
+	  padding: .3em;
+}
