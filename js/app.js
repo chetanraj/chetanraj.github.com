@@ -6,9 +6,9 @@ requirejs.config({
 });
 
 define(["jquery", "jquery-ui"], function($, ui ) {
-    $(function() {
-        
-    });
+  $(function() {
+    URLEmoji.addEmojiToURL();
+  });
 });
 
 var menu = document.querySelector('.menu');
