@@ -1,5 +1,19 @@
-import '../styles/index.css'
+import App from 'next/app';
+import '../styles/index.css';
+import Head from 'next/head';
 
-export default function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
-}
+export default class MyApp extends App {
+    render() {
+      const { Component, pageProps } = this.props
+  
+      return (
+        <>
+          <Head>
+            <title>Chetan Raj</title>
+            <link rel="shortcut icon" href="/favicon.ico" />
+          </Head>
+          <Component {...pageProps} />
+        </>
+      )
+    }
+  }

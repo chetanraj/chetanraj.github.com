@@ -5,9 +5,9 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-            <meta charset="utf-8"></meta>
+            <meta charSet="utf-8"></meta>
             <meta name="viewport" content="width=device-width,initial-scale=1"></meta>
-            <title>Chetan Raj</title>
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
         </Head>
         <body>
           <Main />
