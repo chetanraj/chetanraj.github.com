@@ -20,7 +20,7 @@ function App() {
       <div className="bg"></div>
       <div className="container flex flex-col justify-center h-80">
         <div className="tagline text-base opacity-50">DESIGNER & DEVELOPER</div>
-        <div className="heroline text-3xl">
+        <div className="heroline text-2xl">
           Web Designer & Web Developer,{" "}
           <a
             target="_blank"
