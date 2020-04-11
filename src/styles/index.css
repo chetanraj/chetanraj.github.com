@@ -21,3 +21,10 @@ body {
   background-size: cover;
   opacity: 0.29;
 }
+
+.footer {
+  position: absolute;
+  width: 95%;
+  left: 18px;
+  bottom: 3em;
+}
