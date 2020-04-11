@@ -1,6 +1,9 @@
 import React from 'react';
+import ReactGA from 'react-ga';
 
 function App() {
+  ReactGA.initialize('UA-57147313-1');
+
   return (
     <div className="App">
       <div className="p-5 pb-0">
