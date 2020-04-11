@@ -18,7 +18,7 @@ function App() {
         </div>
       </div>
       <div className="bg"></div>
-      <div className="container flex flex-col justify-center h-80">
+      <div className="container flex flex-col justify-center h-82">
         <div className="tagline text-base opacity-50">DESIGNER & DEVELOPER</div>
         <div className="heroline text-2xl">
           Web Designer & Web Developer,{" "}
@@ -37,11 +37,11 @@ function App() {
           <a href="https://active.ai/">Active.ai</a>
         </div>
       </div>
-      <div className="footer flex h-16 justify-between">
+      <div className="footer flex h-2 justify-between">
         <div className="text-base opacity-50 pt-1">
           <a href="mailto:chetan.narian@gmail.com">chetan.narian@gmail.com</a>
         </div>
-        <div className="flex px-6 opacity-50">
+        <div className="flex pl-6 opacity-50">
           <a
             target="_blank"
             rel="noopener noreferrer"
