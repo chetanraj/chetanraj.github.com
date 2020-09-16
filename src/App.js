@@ -40,7 +40,7 @@ function App() {
           ,<br /> Music, Movies, Gadgets, Iron Man, Batman
         </div>
         <div className="tagline text-base opacity-50 font-light">
-          Currently Senior Web Developer at{" "}
+          Currently Lead Product Developer at{" "}
           <a href="https://active.ai/">Active.ai</a>
         </div>
       </div>
