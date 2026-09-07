@@ -3,7 +3,6 @@
 @theme {
   --color-white: #fff;
   --color-blue: #0f4c81;
-  --spacing-82: 82vh;
 }
 
 body {
@@ -26,9 +25,3 @@ body {
   opacity: 0.29;
 }
 
-.footer {
-  position: absolute;
-  width: 95%;
-  left: 18px;
-  bottom: 3em;
-}
