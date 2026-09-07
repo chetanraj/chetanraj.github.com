@@ -1,19 +1,17 @@
 function App() {
   return (
     <div className="App">
-      <div className="p-5 pb-0">
-        <div className="header flex h-16 justify-between">
+      <div className="relative min-h-screen px-5 pt-5">
+        <div className="header flex h-16 items-center justify-between">
           <div className="text-2xl">Chetan Raj</div>
-          <div className="flex px-6">
-            <a
-              className="uppercase pt-1"
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://chetanraj.dev/blog/"
-            >
-              Blog
-            </a>
-          </div>
+          <a
+            className="uppercase"
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://chetanraj.dev/blog/"
+          >
+            Blog
+          </a>
         </div>
         <div className="bg"></div>
         <div className="container flex flex-col justify-center h-82">
@@ -37,13 +35,12 @@ function App() {
             <a href="https://zinnia.com/">Zinnia</a>
           </div>
         </div>
-        <div className="footer flex h-2 justify-end">
-          <div className="flex opacity-50">
+        <div className="footer absolute bottom-12 left-0 right-0 flex justify-end px-5">
+          <div className="flex items-center gap-6 opacity-50">
             <a
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="uppercase pl-3 pr-3"
               href="https://instagram.com/javascriptessentials"
             >
               <svg
@@ -67,7 +64,6 @@ function App() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X"
-              className="uppercase pl-3 pr-3"
               href="https://x.com/chetan_raj"
             >
               <svg
@@ -84,7 +80,6 @@ function App() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              className="uppercase pl-3 pr-3"
               href="https://github.com/chetanraj"
             >
               <svg
