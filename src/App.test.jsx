@@ -9,9 +9,9 @@ test("renders name, job title, and blog link", () => {
     "href",
     "https://chetanraj.dev/blog/"
   );
-  expect(screen.getByRole("link", { name: /active\.ai/i })).toHaveAttribute(
+  expect(screen.getByRole("link", { name: /zinnia/i })).toHaveAttribute(
     "href",
-    "https://active.ai/"
+    "https://zinnia.com/"
   );
   expect(screen.getByRole("link", { name: /^x$/i })).toHaveAttribute(
     "href",

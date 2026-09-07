@@ -33,8 +33,8 @@ function App() {
             ,<br /> Music, Movies, Gadgets, Iron Man, Batman
           </div>
           <div className="tagline text-base opacity-50 font-light">
-            Currently Lead Product Developer at{" "}
-            <a href="https://active.ai/">Active.ai</a>
+            Currently Frontend Architect / Senior Engineering Manager at{" "}
+            <a href="https://zinnia.com/">Zinnia</a>
           </div>
         </div>
         <div className="footer flex h-2 justify-between">
