@@ -37,11 +37,8 @@ function App() {
             <a href="https://zinnia.com/">Zinnia</a>
           </div>
         </div>
-        <div className="footer flex h-2 justify-between">
-          <div className="text-base opacity-50 pt-1">
-            <a href="mailto:chetan.narian@gmail.com">chetan.narian@gmail.com</a>
-          </div>
-          <div className="flex pl-6 opacity-50">
+        <div className="footer flex h-2 justify-end">
+          <div className="flex opacity-50">
             <a
               target="_blank"
               rel="noopener noreferrer"

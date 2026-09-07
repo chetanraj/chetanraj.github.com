@@ -21,4 +21,7 @@ test("renders name, job title, and blog link", () => {
     "href",
     "https://instagram.com/javascriptessentials"
   );
+  expect(
+    screen.queryByRole("link", { name: /chetan\.narian@gmail\.com/i })
+  ).not.toBeInTheDocument();
 });
