@@ -13,4 +13,8 @@ test("renders name, job title, and blog link", () => {
     "href",
     "https://active.ai/"
   );
+  expect(screen.getByRole("link", { name: /^x$/i })).toHaveAttribute(
+    "href",
+    "https://x.com/chetan_raj"
+  );
 });
