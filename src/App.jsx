@@ -9,7 +9,7 @@ function App() {
               className="uppercase pt-1"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://chetanraj.in/blog"
+              href="https://chetanraj.dev/blog/"
             >
               Blog
             </a>

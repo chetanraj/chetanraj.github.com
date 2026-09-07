@@ -7,7 +7,7 @@ test("renders name, job title, and blog link", () => {
   expect(screen.getByText("DESIGNER & DEVELOPER")).toBeInTheDocument();
   expect(screen.getByRole("link", { name: /blog/i })).toHaveAttribute(
     "href",
-    "https://chetanraj.in/blog"
+    "https://chetanraj.dev/blog/"
   );
   expect(screen.getByRole("link", { name: /active\.ai/i })).toHaveAttribute(
     "href",
