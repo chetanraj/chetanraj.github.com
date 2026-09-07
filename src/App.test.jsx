@@ -17,4 +17,8 @@ test("renders name, job title, and blog link", () => {
     "href",
     "https://x.com/chetan_raj"
   );
+  expect(screen.getByRole("link", { name: /^instagram$/i })).toHaveAttribute(
+    "href",
+    "https://instagram.com/javascriptessentials"
+  );
 });

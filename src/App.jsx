@@ -25,7 +25,7 @@ function App() {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://www.instagram.com/javascriptessentials/"
+              href="https://instagram.com/javascriptessentials"
               className="underline"
             >
               Tech Instagrammer
@@ -45,8 +45,9 @@ function App() {
             <a
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Instagram"
               className="uppercase pl-3 pr-3"
-              href="https://www.instagram.com/thecjstream/"
+              href="https://instagram.com/javascriptessentials"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
