@@ -1,111 +1,41 @@
-function App() {
+import { useEffect, useRef } from "react";
+import { attachScrollMotion } from "./scrollMotion";
+import laptop from "./images/bg.jpg";
+const links = [
+  { title: "Writing", label: "Visit the blog", href: "https://chetanraj.dev/blog/", text: "Notes from the web.", number: "01" },
+  { title: "Code", label: "Explore GitHub", href: "https://github.com/chetanraj", text: "A look under the hood.", number: "02" },
+  { title: "Community", label: "JavaScript Essentials", href: "https://instagram.com/javascriptessentials", text: "Tech, shared on Instagram.", number: "03" },
+];
+function Arrow({ down = false }) {
+  return <svg className="arrow-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">{down ? <path d="M12 4v16m-6-6 6 6 6-6" /> : <path d="M6 18 18 6M6 6h12v12" />}</svg>;
+}
+export default function App() {
+  const portfolio = useRef(null);
+  useEffect(() => {
+    if (!window.matchMedia) return;
+    let cancelled = false;
+    let detach;
+    Promise.all([import("gsap"), import("gsap/ScrollTrigger")])
+      .then(([{ gsap }, { ScrollTrigger }]) => {
+        if (!cancelled && portfolio.current) detach = attachScrollMotion(portfolio.current, gsap, ScrollTrigger);
+      })
+      .catch(() => { /* Native scrolling remains available if optional motion fails. */ });
+    return () => { cancelled = true; detach?.(); };
+  }, []);
   return (
-    <div className="App">
-      <div className="relative flex min-h-screen flex-col px-5 py-5">
-        <div className="header flex h-16 shrink-0 items-center justify-between">
-          <div className="text-2xl">Chetan Raj</div>
-          <a
-            className="uppercase"
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://chetanraj.dev/blog/"
-          >
-            Blog
-          </a>
-        </div>
-        <div className="bg"></div>
-        <div className="flex flex-1 flex-col justify-center">
-          <div className="tagline text-base opacity-50">
-            DESIGNER & DEVELOPER
-          </div>
-          <div className="heroline text-2xl">
-            Web Designer & Web Developer,{" "}
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://instagram.com/javascriptessentials"
-              className="underline"
-            >
-              Tech Instagrammer
-            </a>
-            ,<br /> Music, Movies, Gadgets, Iron Man, Batman
-          </div>
-          <div className="tagline text-base opacity-50 font-light">
-            Currently Frontend Architect / Senior Engineering Manager at{" "}
-            <a href="https://zinnia.com/">Zinnia</a>
-          </div>
-        </div>
-        <div className="footer flex h-16 shrink-0 items-center justify-end">
-          <div className="flex items-center gap-6 opacity-50">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Instagram"
-              href="https://instagram.com/javascriptessentials"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="block"
-                aria-hidden="true"
-              >
-                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-                <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
-              </svg>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="X"
-              href="https://x.com/chetan_raj"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="currentColor"
-                className="block"
-                aria-hidden="true"
-              >
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.727-8.835L1.254 2.25H8.08l4.253 5.622L18.244 2.25zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
-              </svg>
-            </a>
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub"
-              href="https://github.com/chetanraj"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="block"
-                aria-hidden="true"
-              >
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
+    <div className="portfolio afterglow" ref={portfolio}>
+      <a className="skip-link" href="#main">Skip to content</a>
+      <header className="site-header"><a className="wordmark" href="#main" aria-label="Chetan Raj home">cr<span>.</span></a><span className="header-note">Design & development</span><a className="text-link" href="https://chetanraj.dev/blog/">Read the blog <Arrow /></a></header>
+      <main id="main">
+        <section className="hero" aria-labelledby="name">
+          <figure className="hero-image"><img src={laptop} alt="The original laptop photograph, glowing with orange, violet, and blue light." fetchPriority="high"/><figcaption>Same desk. New perspectives.</figcaption></figure>
+          <div className="hero-copy"><p className="eyebrow">Designer & developer</p><h1 id="name">Chetan<br/><span>Raj.</span></h1><p className="intro">Design meets code.<br/>Curiosity does the rest.</p><a className="hero-link" href="#explore">Explore my corner of the web <Arrow down /></a></div>
+          <div className="role"><span className="role-label">Currently</span><p>Frontend Architect /<br/>Senior Engineering Manager</p><a href="https://zinnia.com/">Zinnia <Arrow /></a></div>
+        </section>
+        <section className="explore-section" id="explore" aria-labelledby="explore-title"><div className="section-heading"><p className="eyebrow">Around the web</p><h2 id="explore-title">A few open tabs.</h2><p>Writing, building, sharing.</p></div><div className="link-grid">{links.map(link => <a className="destination" href={link.href} key={link.title}><div className="card-top"><span>{link.number}</span><Arrow /></div><h3>{link.title}</h3><p>{link.text}</p><span className="destination-label">{link.label}</span></a>)}</div></section>
+        <section className="offscreen" aria-labelledby="offscreen-title"><p className="eyebrow" id="offscreen-title">Beyond the screen</p><p>Music. Movies. Gadgets.<br/><span>Iron Man. Batman.</span></p><span className="asterisk" aria-hidden="true">✳</span></section>
+      </main>
+      <footer><span>Chetan Raj <span className="footer-detail"> / Designer & developer</span></span><nav aria-label="Social links"><a href="https://instagram.com/javascriptessentials">Instagram</a><a href="https://x.com/chetan_raj">X</a><a href="https://github.com/chetanraj">GitHub</a></nav></footer>
     </div>
   );
 }
-
-export default App;
