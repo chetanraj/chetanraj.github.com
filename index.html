@@ -55,7 +55,18 @@
     </script>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>
+      <style>
+        body { margin: 0; background: #101312; color: #f5f4ed; font-family: Arial, sans-serif; }
+        .no-script { min-height: 100vh; box-sizing: border-box; padding: 12vh 6vw; background: linear-gradient(90deg, rgba(5,23,44,.93), rgba(15,76,129,.48)), url('./src/images/bg.jpg') center/cover; }
+        .no-script h1 { font: 400 clamp(4rem, 10vw, 9rem)/1 Georgia, serif; margin: .3em 0; }
+        .no-script a { color: inherit; margin-right: 1.5em; line-height: 2.5; }
+      </style>
+      <main class="no-script"><p>Designer &amp; developer</p><h1>Chetan Raj.</h1>
+        <p>Frontend Architect / Senior Engineering Manager at <a href="https://zinnia.com/">Zinnia</a></p>
+        <nav aria-label="Around the web"><a href="https://chetanraj.dev/blog/">Blog</a><a href="https://github.com/chetanraj">GitHub</a><a href="https://instagram.com/javascriptessentials">Instagram</a><a href="https://x.com/chetan_raj">X</a></nav>
+      </main>
+    </noscript>
     <div id="root"></div>
     <script type="module" src="/src/index.jsx"></script>
   </body>
